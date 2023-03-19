@@ -5,8 +5,8 @@
  * @format
  */
 
-import React, { useEffect, useRef, useState } from 'react';
-import type { PropsWithChildren } from 'react';
+import React, {useEffect, useRef, useState} from 'react';
+import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -22,21 +22,17 @@ import {
   Image,
 } from 'react-native';
 
-import {
-  Colors
-} from 'react-native/Libraries/NewAppScreen';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 import RNFS from 'react-native-fs';
 
-import Server, {
-  STATES,
-  extractBundledAssets,
-} from '@dr.pogodin/react-native-static-server';
+import Server from 'react-native-static-server';
 
-import { WebView } from 'react-native-webview';
+import {WebView} from 'react-native-webview';
 
 export const formUrl = 'https://static.runoob.com/images/demo/demo1.jpg';
-export const downloadDest = `${RNFS.DocumentDirectoryPath}/webroot/demo.jpg`;
+// export const downloadDest = `${RNFS.DocumentDirectoryPath}/webroot/demo.jpg`;
+export const downloadDest = `${RNFS.MainBundlePath}/webroot/demo.jpg`;
 
 /*下载文件*/
 export function downloadFile(downloadDest: string, formUrl: string) {
@@ -108,7 +104,11 @@ function App(): JSX.Element {
     // In our example, `server` is reset to null when the component is unmount,
     // thus signalling that server init sequence below should be aborted, if it
     // is still underway.
-    let server: null | Server = new Server({ fileDir, stopInBackground: true });
+    let server: null | Server = new Server(0, fileDir, {
+      localOnly: true,
+      keepAlive: true,
+    });
+    console.log('fileDir: ', fileDir);
 
     (async () => {
       // On Android we should extract web server assets from the application
@@ -136,20 +136,11 @@ function App(): JSX.Element {
         }
       }
 
-      server?.addStateListener((newState) => {
-        // Depending on your use case, you may want to use such callback
-        // to implement a logic which prevents other pieces of your app from
-        // sending any requests to the server when it is inactive.
-
-        // Here `newState` equals to a numeric state constant,
-        // and `STATES[newState]` equals to its human-readable name,
-        // because `STATES` contains both forward and backward mapping
-        // between state names and corresponding numeric values.
-        console.log(`New server state is "${STATES[newState]}"`);
-      });
       const res = await server?.start();
+      console.log('res: ', res);
 
       if (res && server) {
+        console.log('re2rs: ', res);
         setOrigin(res);
       }
     })();
@@ -166,24 +157,22 @@ function App(): JSX.Element {
 
   const webView = useRef<WebView>(null);
 
-  console.log(origin);
-
   return (
     <View style={styles.webview}>
-      <View style={{ height: 50, display: "flex" }}>
-        <Button title='下载文件' onPress={() => downloadFile(downloadDest, formUrl)}></Button>
-        {
-          origin && <Image
-            style={styles.tinyLogo}
-            source={{ uri: origin + "/demo.jpg" }}
-          />
-        }
+      <View style={{height: 50, display: 'flex'}}>
+        <Button
+          title="下载文件"
+          onPress={() => downloadFile(downloadDest, formUrl)}></Button>
+        {origin && (
+          <Image style={styles.tinyLogo} source={{uri: origin + '/demo.jpg'}} />
+        )}
       </View>
       <WebView
-        style={{ flex: 1 }}
+        style={{flex: 1}}
+        originWhitelist={['*']}
         cacheMode="LOAD_NO_CACHE"
         // This way we can receive messages sent by the WebView content.
-        onMessage={(event) => {
+        onMessage={event => {
           const message = event.nativeEvent.data;
           Alert.alert('Got a message from the WebView content', message);
         }}
@@ -194,17 +183,38 @@ function App(): JSX.Element {
         // there when links inside WebView are pressed. However, it is worth
         // to re-test, troubleshoot, and probably fix. It works fine both
         // Android and iOS.
-        onShouldStartLoadWithRequest={(request) => {
-          const load = request.url.startsWith(origin);
-          if (!load) {
-            Linking.openURL(request.url);
+        onShouldStartLoadWithRequest={request => {
+          // const load = request.url.startsWith(origin);
+
+          // console.log('request.navigationType: ', request.navigationType);
+          // console.log('request.url: ', request.url);
+
+          // if (!load) {
+          //   Linking.openURL(request.url);
+          // }
+          // return true;
+          const isExternalLink =
+            Platform.OS === 'ios' ? request.navigationType === 'click' : true;
+          console.log('isExternalLink: ', isExternalLink);
+          if (request.url.slice(0, 4) === 'http' && isExternalLink) {
+            Linking.canOpenURL(request.url).then(supported => {
+              console.log('supported: ', supported);
+              if (supported) {
+                Linking.openURL(request.url);
+              }
+            });
+            return false;
           }
-          return load;
+          return true;
         }}
+        useWebView2
         ref={webView}
-        source={{ uri: origin }}
+        // source={!!origin ? {uri: origin} : undefined}
+        source={{
+          uri: 'https://hc3d.histron.cn/share.html?k=fa2b5d05-24fa-4f81-979c-4f6d90f07294',
+        }}
       />
-    </View >
+    </View>
   );
 }
 
@@ -222,4 +232,3 @@ const styles = StyleSheet.create({
 });
 
 export default App;
-

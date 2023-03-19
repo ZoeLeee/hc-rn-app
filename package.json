@@ -1,5 +1,5 @@
 {
-  "name": "HaiChuangeApp",
+  "name": "haichuangapp",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,10 +10,10 @@
     "test": "jest"
   },
   "dependencies": {
-    "@dr.pogodin/react-native-static-server": "^0.7.2",
     "react": "18.2.0",
     "react-native": "0.71.4",
     "react-native-fs": "^2.20.0",
+    "react-native-static-server": "^0.5.0",
     "react-native-webview": "^11.26.1"
   },
   "devDependencies": {
