@@ -1,0 +1,866 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.7.33",
+        "version" : "2.0"
+    },
+    "extensionsUsed" : [
+        "KHR_draco_mesh_compression"
+    ],
+    "extensionsRequired" : [
+        "KHR_draco_mesh_compression"
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "roller",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "translation" : [
+                -15.164031982421875,
+                29.973814010620117,
+                -81.42082214355469
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "roller01",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "translation" : [
+                -15.164031982421875,
+                29.973825454711914,
+                -150.8583221435547
+            ]
+        },
+        {
+            "mesh" : 2,
+            "name" : "The_attachment_machine_1",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "translation" : [
+                10.006866455078125,
+                75.18903350830078,
+                110.99763488769531
+            ]
+        },
+        {
+            "mesh" : 3,
+            "name" : "The_attachment_machine_12",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "translation" : [
+                144.51321411132812,
+                65.2719497680664,
+                107.51252746582031
+            ]
+        },
+        {
+            "mesh" : 4,
+            "name" : "The_attachment_machine_2",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "translation" : [
+                9.519561767578125,
+                74.32551574707031,
+                -98.12968444824219
+            ]
+        },
+        {
+            "mesh" : 5,
+            "name" : "The_attachment_machine_3",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "translation" : [
+                141.89065551757812,
+                40.089237213134766,
+                78.42536926269531
+            ]
+        },
+        {
+            "mesh" : 6,
+            "name" : "The_attachment_machine_13",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "translation" : [
+                144.51321411132812,
+                65.2719497680664,
+                107.51252746582031
+            ]
+        },
+        {
+            "mesh" : 7,
+            "name" : "The_attachment_machine",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "translation" : [
+                5.626495361328125,
+                42.6092643737793,
+                77.02644348144531
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "roller.001",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 2
+                }
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "The_attachment_machine_1",
+            "normalTexture" : {
+                "index" : 3
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 4
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 5
+                }
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "The_attachment_machine_2",
+            "normalTexture" : {
+                "index" : 6
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 7
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 8
+                }
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "The_attachment_machine_3",
+            "normalTexture" : {
+                "index" : 9
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 10
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 11
+                }
+            }
+        },
+        {
+            "alphaCutoff" : 0.5,
+            "alphaMode" : "MASK",
+            "doubleSided" : true,
+            "name" : "The_attachment_machine.001",
+            "normalTexture" : {
+                "index" : 12
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 13
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 14
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "roller",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 0,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 3,
+                    "material" : 0,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "roller01",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 1,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 7,
+                    "material" : 0,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "The_attachment_machine_1",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 8,
+                        "NORMAL" : 9,
+                        "TEXCOORD_0" : 10
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 2,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 11,
+                    "material" : 1,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "The_attachment_machine_12",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 12,
+                        "NORMAL" : 13,
+                        "TEXCOORD_0" : 14
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 3,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 15,
+                    "material" : 1,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "The_attachment_machine_2",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 16,
+                        "NORMAL" : 17,
+                        "TEXCOORD_0" : 18
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 4,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 19,
+                    "material" : 2,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "The_attachment_machine_3",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 20,
+                        "NORMAL" : 21,
+                        "TEXCOORD_0" : 22
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 5,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 23,
+                    "material" : 3,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "The_attachment_machine_13",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 24,
+                        "NORMAL" : 25,
+                        "TEXCOORD_0" : 26
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 6,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 27,
+                    "material" : 1,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "The_attachment_machine.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 28,
+                        "NORMAL" : 29,
+                        "TEXCOORD_0" : 30
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 7,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 31,
+                    "material" : 4,
+                    "mode" : 4
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        },
+        {
+            "sampler" : 0,
+            "source" : 3
+        },
+        {
+            "sampler" : 0,
+            "source" : 4
+        },
+        {
+            "sampler" : 0,
+            "source" : 5
+        },
+        {
+            "sampler" : 0,
+            "source" : 6
+        },
+        {
+            "sampler" : 0,
+            "source" : 7
+        },
+        {
+            "sampler" : 0,
+            "source" : 8
+        },
+        {
+            "sampler" : 0,
+            "source" : 9
+        },
+        {
+            "sampler" : 0,
+            "source" : 10
+        },
+        {
+            "sampler" : 0,
+            "source" : 11
+        },
+        {
+            "sampler" : 0,
+            "source" : 12
+        },
+        {
+            "sampler" : 0,
+            "source" : 13
+        },
+        {
+            "sampler" : 0,
+            "source" : 14
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "The_attachment_machine_roller_Normal",
+            "uri" : "The_attachment_machine_roller_Normal.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "The_attachment_machine_roller_BaseColor",
+            "uri" : "The_attachment_machine_roller_BaseColor.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "The_attachment_machine_roller_Metallic-The_attachment_machine_roller_Roughness",
+            "uri" : "The_attachment_machine_roller_Metallic-The_attachment_machine_roller_Roughness.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "The_attachment_machine_The_attachment_machine_1_Normal",
+            "uri" : "The_attachment_machine_The_attachment_machine_1_Normal.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "The_attachment_machine_The_attachment_machine_1_BaseColor",
+            "uri" : "The_attachment_machine_The_attachment_machine_1_BaseColor.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "The_attachment_machine_The_attachment_machine_1_Metallic-The_attachment_machine_The_attachment_machine_1_Roughness",
+            "uri" : "The_attachment_machine_The_attachment_machine_1_Metallic-The_attachment_machine_The_attachment_machine_1_Roughness.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "The_attachment_machine_The_attachment_machine_2_Normal",
+            "uri" : "The_attachment_machine_The_attachment_machine_2_Normal.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "The_attachment_machine_The_attachment_machine_2_BaseColor",
+            "uri" : "The_attachment_machine_The_attachment_machine_2_BaseColor.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "The_attachment_machine_The_attachment_machine_2_Metallic-The_attachment_machine_The_attachment_machine_2_Roughness",
+            "uri" : "The_attachment_machine_The_attachment_machine_2_Metallic-The_attachment_machine_The_attachment_machine_2_Roughness.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "The_attachment_machine_The_attachment_machine_3_Normal",
+            "uri" : "The_attachment_machine_The_attachment_machine_3_Normal.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "The_attachment_machine_The_attachment_machine_3_BaseColor",
+            "uri" : "The_attachment_machine_The_attachment_machine_3_BaseColor.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "The_attachment_machine_The_attachment_machine_3_Metallic-The_attachment_machine_The_attachment_machine_3_Roughness",
+            "uri" : "The_attachment_machine_The_attachment_machine_3_Metallic-The_attachment_machine_The_attachment_machine_3_Roughness.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "The_attachment_machine_The_attachment_machine_Normal",
+            "uri" : "The_attachment_machine_The_attachment_machine_Normal.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "The_attachment_machine_The_attachment_machine_BaseColor",
+            "uri" : "The_attachment_machine_The_attachment_machine_BaseColor.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "The_attachment_machine_The_attachment_machine_Metallic-The_attachment_machine_The_attachment_machine_Roughness",
+            "uri" : "The_attachment_machine_The_attachment_machine_Metallic-The_attachment_machine_The_attachment_machine_Roughness.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "componentType" : 5126,
+            "count" : 480,
+            "max" : [
+                106.181640625,
+                32.954833984375,
+                29.9739933013916
+            ],
+            "min" : [
+                -55.18603515625,
+                -32.8721923828125,
+                -9.107809066772461
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 480,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 480,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 984,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 480,
+            "max" : [
+                106.181640625,
+                32.955322265625,
+                29.9739933013916
+            ],
+            "min" : [
+                -55.18603515625,
+                -32.8717041015625,
+                -9.107809066772461
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 480,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 480,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 984,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 580,
+            "max" : [
+                99.9970703125,
+                7.768310546875,
+                12.026546478271484
+            ],
+            "min" : [
+                -99.837158203125,
+                -14.6947021484375,
+                -13.421951293945312
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 580,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 580,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 1020,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 858,
+            "max" : [
+                -49.13037109375,
+                47.9884033203125,
+                10.298656463623047
+            ],
+            "min" : [
+                -216.61328125,
+                -2.903564453125,
+                -6.52154541015625
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 858,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 858,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 1368,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 398,
+            "max" : [
+                98.115234375,
+                24.32861328125,
+                29.087390899658203
+            ],
+            "min" : [
+                -100.208740234375,
+                -15.34228515625,
+                -38.250511169433594
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 398,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 398,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 696,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 242,
+            "max" : [
+                -54.35986328125,
+                8.2666015625,
+                9.090742111206055
+            ],
+            "min" : [
+                -144.69482421875,
+                -5.3934326171875,
+                -13.264358520507812
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 242,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 242,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 360,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 482,
+            "max" : [
+                -48.9921875,
+                46.9654541015625,
+                1.0213546752929688
+            ],
+            "min" : [
+                -216.08251953125,
+                23.5985107421875,
+                -7.535041809082031
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 482,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 482,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 1068,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 4684,
+            "max" : [
+                164.1064453125,
+                295.4444580078125,
+                42.60956954956055
+            ],
+            "min" : [
+                -179.8837890625,
+                -220.115478515625,
+                -77.39053344726562
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 4684,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 4684,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 8610,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 2709,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2709,
+            "byteOffset" : 2712
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3103,
+            "byteOffset" : 5424
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4150,
+            "byteOffset" : 8528
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2311,
+            "byteOffset" : 12680
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1485,
+            "byteOffset" : 14992
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3009,
+            "byteOffset" : 16480
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 21611,
+            "byteOffset" : 19492
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 41104,
+            "uri" : "The_attachment_machine.bin"
+        }
+    ]
+}
